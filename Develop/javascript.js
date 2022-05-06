@@ -18,10 +18,14 @@ function displayPlanner() {
     $(".hour").each(function () {
         var currentHourOnPlanner = $(this).text();
         var currentTask = localStorage.getItem(currentHourOnPlanner);
-        if(currentTask != "" ) {
+        if (currentTask != "") {
             $(this).siblings(".description").val(currentTask);
         }
     }
     )
 }
+
+
+
 displayPlanner();
+
